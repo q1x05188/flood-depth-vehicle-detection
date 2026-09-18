@@ -39,7 +39,7 @@ runs_cctv_vehicle/exp1/weights/best.pt
         │  4_infer_and_eval.py --eval   (전체 test셋 mAP/precision/recall)
         │  5_eval_by_group.py           (홍수 vs 비홍수 성능 비교 - 핵심 결과)
         ▼
-최종 결과: "이 CCTV 데이터에서 차량 탐지가 어느 정도 가능한가" + "침수 상황이 탐지 성능에 미치는 영향"
+최종 결과: "주어진 CCTV 데이터에서 차량 탐지가 어느 정도 가능한가" + "침수 상황이 탐지 성능에 미치는 영향"
 ```
 
 ## 폴더 구조
