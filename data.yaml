@@ -1,0 +1,9 @@
+# YOLO 데이터셋 설정 파일
+path: ./dataset
+train: images/train
+val: images/val
+test: images/test
+
+# 목적이 "차량 존재 여부"만이므로 단일 클래스로 통합
+names:
+  0: vehicle
