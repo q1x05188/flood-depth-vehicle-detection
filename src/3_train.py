@@ -1,18 +1,3 @@
-"""
-STEP 3. YOLO 모델 학습 (가정용 GPU 기준 경량 세팅)
---------------------------------------------------------------
-사전 설치:
-    pip install ultralytics
-
-VRAM별 권장 설정 (batch, imgsz 조절):
-    - VRAM 4GB 이하 : model=yolov8n.pt, imgsz=480, batch=4~8
-    - VRAM 6~8GB    : model=yolov8n.pt or yolov8s.pt, imgsz=640, batch=8~16
-    - GPU 없음(CPU만): device="cpu" 로 바꾸고 imgsz=416, batch=4, epochs를 낮게(30 이하) 잡는 것을 권장
-      (CPU 학습은 매우 느립니다 - 가능하면 Google Colab 무료 GPU 사용을 추천)
-
-사용법:
-    python 3_train.py --data data.yaml --epochs 50 --imgsz 640 --batch 8
-"""
 
 import argparse
 from ultralytics import YOLO
