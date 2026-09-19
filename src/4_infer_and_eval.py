@@ -1,19 +1,3 @@
-"""
-STEP 4. 학습된 모델로 탐지 테스트 (이미지 폴더 또는 영상 전체)
---------------------------------------------------------------
-- 이미지 폴더 또는 영상 파일을 넣으면 탐지 결과가 그려진 이미지/영상이 저장됨
-- test 셋에 대한 정량 평가(mAP 등)는 --eval 옵션으로 확인 가능
-
-사용법:
-    # test 이미지셋 정량 평가 (mAP50, mAP50-95 등)
-    python 4_infer_and_eval.py --weights runs_cctv_vehicle/exp1/weights/best.pt --data data.yaml --eval
-
-    # 새 영상에 대해 탐지 시각화
-    python 4_infer_and_eval.py --weights runs_cctv_vehicle/exp1/weights/best.pt --source new_cctv.mp4
-
-    # 새 이미지 폴더에 대해 탐지 시각화
-    python 4_infer_and_eval.py --weights runs_cctv_vehicle/exp1/weights/best.pt --source dataset/images/test
-"""
 
 import argparse
 from ultralytics import YOLO
