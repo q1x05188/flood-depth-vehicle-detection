@@ -1,12 +1,3 @@
-"""
-STEP 5. 홍수(flood) vs 비홍수(normal) 상황에서의 탐지 성능 비교
---------------------------------------------------------------------
-2_split_dataset.py 로 만들어진 dataset/images/test_flood, test_normal 폴더를 이용해
-같은 모델을 두 그룹에 각각 평가하고 mAP를 나란히 비교합니다.
-
-사용법:
-    python 5_eval_by_group.py --weights runs_cctv_vehicle/exp1/weights/best.pt --data_root dataset
-"""
 
 import argparse
 import tempfile
